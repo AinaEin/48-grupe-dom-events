@@ -1,6 +1,8 @@
 function header() {
     const navDOM = document.querySelector('.main-nav');
-    const href = location.hostname === 'localhost' ? '/' : './';
+    const localhost = 'http://localhost:4810/';
+    const github = 'https://github.com/AinaEin/48-grupe-dom-events';
+    const href = location.hostname === 'localhost' ? localhost : github;
 
     const HTML = `
         <a href="${href}">Home</a>
