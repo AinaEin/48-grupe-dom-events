@@ -11,6 +11,8 @@ function header() {
         <a href="${href}/basketball/">Basketball</a>
         <a href="${href}/virykle/">Virykle</a>
         <a href="${href}/cart/">Prekiu krepselis</a>
+        <a href="${href}/clock/">Laikrodis</a>
+        <a href="${href}/better-clock/">Geresnis laikrodis</a>
     `;
     navDOM.innerHTML = HTML;
 }
