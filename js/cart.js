@@ -44,7 +44,7 @@ for (const item of data) {
 
 tbodyDOM.innerHTML = HTML;
 
-updatFinalPrice();
+updateFinalPrice();
 
 const trListDOM = tbodyDOM.querySelectorAll("tr");
 
@@ -76,7 +76,7 @@ function minusButtonHandler(event, i, countDOM, priceDOM) {
   countDOM.innerText = data[i].count + " vnt.";
   priceDOM.innerText = (data[i].count * data[i].unitPrice).toFixed(2) + " Eur";
 
-  updatFinalPrice();
+  updateFinalPrice();
 }
 
 function plusButtonHandler(event, i, countDOM, priceDOM) {
@@ -91,10 +91,10 @@ function plusButtonHandler(event, i, countDOM, priceDOM) {
   countDOM.innerText = data[i].count + " vnt.";
   priceDOM.innerText = (data[i].count * data[i].unitPrice).toFixed(2) + " Eur";
 
-  updatFinalPrice();
+  updateFinalPrice();
 }
 
-function updatFinalPrice() {
+function updateFinalPrice() {
   const finalPrice = data.reduce((t, i) => t + i.unitPrice * i.count, 0);
   finalPriceDOM.innerText = finalPrice.toFixed(2) + " Eur";
 }
